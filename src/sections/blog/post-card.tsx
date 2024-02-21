@@ -28,7 +28,7 @@ export const BlogCard: FC<BlogCardProps> = ({
       href={paths.blog.post(post.slug)}
       className="h-full"
     >
-      <Card className="h-full transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl duration-500 w-full min-w-[500px] max-lg:min-w-[300px]">
+      <Card className="h-full transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:shadow-xl duration-500 w-full min-w-[500px] max-lg:max-w-[400px] max-lg:min-w-[300px]">
         <CardHeader className="flex flex-row space-x-5 max-lg:flex-col max-lg:space-y-5 max-lg:space-x-0 max-lg:items-center max-lg:text-center">
           <Image
             src={post.coverImageUrl}

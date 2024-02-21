@@ -19,9 +19,9 @@ export const FeaturedPost: FC<FeaturedPostProps> = ({ post }) => {
         <Image
           src={post.coverImageUrl}
           alt={post.title}
-          width={600}
-          height={600}
-          className="rounded-xl grayscale m-auto aspect-square object-cover max-lg:w-96 max-lg:h-96"
+          width={400}
+          height={400}
+          className="rounded-xl grayscale m-auto aspect-square object-cover max-lg:w-80 max-lg:h-80"
           priority
           sizes="(max-width: 768px) 80vw, (max-width: 1024px) 50vw (max-width: 1200px) 30vw, 40vw"
         />
