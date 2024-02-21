@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+  @apply flex touch-none select-none transition-colors h-2 w-1.5 h-full border-l border-l-transparent p-1;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* Styles for vertical track */
+  @apply bg-zinc-800 dark:bg-zinc-600;
+}
+
+/* Vertical Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  @apply relative flex-1 rounded-full bg-zinc-400 dark:bg-zinc-400;
+}
+
+/* Horizontal Scrollbar Track */
+::-webkit-scrollbar-track:horizontal {
+  /* Styles for horizontal scrollbar track */
+  @apply bg-zinc-800 dark:bg-zinc-600;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  /* Styles for horizontal scrollbar handle */
+  @apply relative flex-1 rounded-full bg-zinc-400 dark:bg-zinc-800;
+}
