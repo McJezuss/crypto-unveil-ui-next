@@ -41,7 +41,7 @@ export const PostNavigation = () => {
         <SelectTrigger className="w-full lg:w-1/4">
           <SelectValue placeholder="Table of Contents" />
         </SelectTrigger>
-        <SelectContent className="w-96">
+        <SelectContent className="w-96 lg:w-full">
           {headingData?.map((heading) => (
             <SelectItem
               key={heading.id}
