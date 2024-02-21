@@ -1,4 +1,4 @@
-import { Logo } from "@/components/logos/logo";
+import { Logo } from "@/components/logo";
 import { Button } from "@/components/ui/button";
 import { paths } from "@/paths";
 import { ChevronRight } from "lucide-react";
@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function PostNotFound() {
   return (
     <div className="flex flex-col items-center max-w-6xl pt-40 pb-40 m-auto space-y-10">
-      <Logo variant="horizontal" />
+      <Logo variant="text" />
       <h1 className="text-4xl font-bold text-center">
         Sorry, we couldn&apos;t find that post.
       </h1>
