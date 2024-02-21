@@ -37,7 +37,7 @@ export const FeaturedPosts = async () => {
         {data
           .filter((post) => {
             // if tags contain Theory
-            return post.tags.includes("Theory");
+            return post.tags.includes("Theory") && !post.featured;
           })
           .map((post) => (
             <BlogCard
@@ -65,7 +65,7 @@ export const FeaturedPosts = async () => {
         {data
           .filter((post) => {
             // if tags contain Theory
-            return post.tags.includes("Smart Contracts");
+            return post.tags.includes("Smart Contracts") && !post.featured;
           })
           .map((post) => (
             <BlogCard

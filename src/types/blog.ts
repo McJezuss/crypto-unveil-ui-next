@@ -15,6 +15,8 @@ export interface Post {
   coverImage: string
   coverImageUrl: string
   tags: string[]
+  featured?: boolean
+  pinned?: boolean
   createdAt: string
   updatedAt: string
 }
