@@ -13,11 +13,13 @@ import { FC } from "react";
 interface BlogListPaginationProps {
   page: number;
   numberOfPages: number;
+  tags?: string[];
 }
 
 export const BlogListPagination: FC<BlogListPaginationProps> = ({
   page,
   numberOfPages,
+  tags,
 }) => {
   page = Number(page);
 
@@ -27,20 +29,22 @@ export const BlogListPagination: FC<BlogListPaginationProps> = ({
         {page > 1 && (
           <PaginationItem>
             <PaginationPrevious
-              href={`${paths.blog.list({ page: page - 1 })}`}
+              href={`${paths.blog.list({ page: page - 1, tags })}`}
             />
           </PaginationItem>
         )}
         {page > 1 && (
           <PaginationItem>
-            <PaginationLink href={`${paths.blog.list({ page: page - 1 })}`}>
+            <PaginationLink
+              href={`${paths.blog.list({ page: page - 1, tags })}`}
+            >
               {page - 1}
             </PaginationLink>
           </PaginationItem>
         )}
         <PaginationItem>
           <PaginationLink
-            href={`${paths.blog.list({ page: page })}`}
+            href={`${paths.blog.list({ page: page, tags })}`}
             isActive={true}
           >
             {page}
@@ -48,7 +52,9 @@ export const BlogListPagination: FC<BlogListPaginationProps> = ({
         </PaginationItem>
         {numberOfPages > page && (
           <PaginationItem>
-            <PaginationLink href={`${paths.blog.list({ page: page + 1 })}`}>
+            <PaginationLink
+              href={`${paths.blog.list({ page: page + 1, tags })}`}
+            >
               {page + 1}
             </PaginationLink>
           </PaginationItem>
@@ -60,7 +66,9 @@ export const BlogListPagination: FC<BlogListPaginationProps> = ({
         )}
         {numberOfPages > page && (
           <PaginationItem>
-            <PaginationNext href={`${paths.blog.list({ page: page + 1 })}`} />
+            <PaginationNext
+              href={`${paths.blog.list({ page: page + 1, tags })}`}
+            />
           </PaginationItem>
         )}
       </PaginationContent>
