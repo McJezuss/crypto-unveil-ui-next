@@ -25,7 +25,7 @@ export const getPosts = async ({ limit, page, featured, tags }: GetAllPostsParam
       tags: tags
     }),
     {
-      cache: "no-cache",
+      cache: "reload",
     }
   )
 
