@@ -20,7 +20,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     name: "Crypto Unveil",
-    image: `${process.env.WEBSITE_URL}/logos/full.png`,
+    image: `${process.env.WEBSITE_URL}/logos/icon.png`,
     founder: {
       "@type": "Person",
       name: "Timo Klaasee",
@@ -28,7 +28,7 @@ export default function Home() {
       url: `https://www.linkedin.com/in/timoklaasee/`,
     },
     url: process.env.WEBSITE_URL,
-    logo: `${process.env.WEBSITE_URL}/logos/full.png`,
+    logo: `${process.env.WEBSITE_URL}/logos/icon.png`,
   };
 
   return (
