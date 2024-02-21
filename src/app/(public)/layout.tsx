@@ -30,7 +30,7 @@ export default function PublicLayout({
   const backgroundImage = getBackgroundImage(srcSet);
 
   return (
-    <main className="bg-zinc-950">
+    <main className="bg-zinc-950 min-w-screen overflow-x-hidden">
       <Navbar />
 
       <section

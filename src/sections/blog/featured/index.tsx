@@ -13,9 +13,9 @@ export const FeaturedPosts = async () => {
   });
 
   return (
-    <div className="flex flex-col justify-center items-center max-w-6xl h-full m-auto pb-20">
+    <div className="flex flex-col justify-center items-center max-w-6xl h-full pb-20 max-lg:max-w-[350px]">
       <FeaturedPost post={data[0]} />
-      <div className="flex flex-row justify-between w-full items-center mt-20 mb-5">
+      <div className="flex max-lg:flex-col lg:flex-row justify-between w-full items-center mt-20 mb-5">
         <Typography variant="h3">Theory Courses</Typography>
         <Button
           asChild
@@ -47,7 +47,7 @@ export const FeaturedPosts = async () => {
             />
           ))}
       </div>
-      <div className="flex flex-row justify-between w-full items-center mt-20 mb-5">
+      <div className="flex max-lg:flex-col lg:flex-row justify-between w-full items-center mt-20 mb-5">
         <Typography variant="h3">Smart Contracts Courses</Typography>
         <Button
           asChild
