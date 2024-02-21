@@ -47,7 +47,7 @@ export const Footer = () => {
                 href={"https://discord.gg/PaDMFJjKKk"}
                 aria-label="Discord server link"
               >
-                <LogoDiscord className="w-4 h-4 text-zinc-50 dark:text-zinc-950" />
+                <LogoDiscord fill="black" />
               </Link>
             </Button>
           </div>

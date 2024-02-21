@@ -37,6 +37,7 @@ export const BlogList = async ({
         <BlogListPagination
           page={currentPage}
           numberOfPages={numberOfPages}
+          tags={tags}
         />
       </div>
     </div>
