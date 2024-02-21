@@ -94,7 +94,7 @@ export const BlogPost = async ({ slug }: { slug: string }) => {
           <Separator className="my-10" />
           <article
             id="course-content"
-            className="min-w-full space-y-8 font-avenir prose dark:prose-invert dark:prose-lg [&>*]:w-full"
+            className="min-w-full space-y-8 font-avenir prose dark:prose-invert dark:prose-lg max-lg:dark:prose max-lg:dark:prose-invert [&>*]:w-full"
           >
             <Markdown
               rehypePlugins={[rehypeRaw, rehypeSlug]}
