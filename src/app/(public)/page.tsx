@@ -67,7 +67,7 @@ export default function Home() {
               href={paths.blog.index}
               className="flex flex-row items-center"
             >
-              <Typography variant="large">Start Learning</Typography>
+              <Typography variant="p">Start Learning</Typography>
               <ChevronRight className="h-6 text-white" />
             </Link>
           </Button>
