@@ -1,8 +1,10 @@
 import { Logo } from "@/components/logo";
 import { Button } from "@/components/ui/button";
 import { Typography } from "@/components/ui/typography";
+import { paths } from "@/paths";
 import { ChevronRight } from "lucide-react";
 import { Metadata } from "next";
+import Link from "next/link";
 import { EducationalOrganization, WithContext } from "schema-dts";
 
 export const generateMetadata = async (): Promise<Metadata> => {
@@ -58,10 +60,16 @@ export default function Home() {
         <div className="flex flex-row space-x-5">
           <Button
             variant={"secondary"}
-            className="p-5 text-lg flex flex-row items-center"
+            asChild
+            className="p-5"
           >
-            Start learning
-            <ChevronRight className="h-6 text-white" />
+            <Link
+              href={paths.blog.index}
+              className="flex flex-row items-center"
+            >
+              <Typography variant="large">Start Learning</Typography>
+              <ChevronRight className="h-6 text-white" />
+            </Link>
           </Button>
         </div>
       </div>
