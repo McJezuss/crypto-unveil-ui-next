@@ -1,6 +1,6 @@
 export const paths = {
   home: '/',
-  mission: '/mission',
+  portfolio: '/portfolio',
   contact: '/contact',
   blog: {
     index: '/blog',

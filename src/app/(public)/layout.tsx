@@ -30,16 +30,18 @@ export default function PublicLayout({
   const backgroundImage = getBackgroundImage(srcSet);
 
   return (
-    <main className="bg-zinc-950 min-w-screen overflow-x-hidden">
+    <main className="bg-zinc-950 min-w-screen">
       <Navbar />
 
       <section
-        className="h-full min-h-screen bg-no-repeat bg-top bg-fixed"
+        className="h-full min-h-screen bg-no-repeat bg-top bg-fixed lg:bg-cover bg-zinc-950"
         style={{
           backgroundImage,
         }}
       >
-        <div className="lg:pt-0 h-full min-h-screen p-5">{children}</div>
+        <div className="lg:pt-0 h-full min-h-screen p-5 bg-zinc-950/50">
+          {children}
+        </div>
       </section>
 
       <Footer />

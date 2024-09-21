@@ -16,11 +16,11 @@ export const generateMetadata = async ({
 }: Props): Promise<Metadata> => {
   const { data } = await getPostBySlug(slug);
 
-  if (!data) return { title: "Blog | Crypto Unveil" };
+  if (!data) return { title: "Blog | De Cent" };
 
   return {
-    title: `${data.title} | Crypto Unveil`,
-    authors: [{ name: "Crypto Unveil" }, { name: "Timo Klaasee" }],
+    title: `${data.title} | De Cent`,
+    authors: [{ name: "De Cent" }, { name: "Timo Klaasee" }],
     description: data.previewContent,
     keywords: [
       ...data.tags,
@@ -34,7 +34,7 @@ export const generateMetadata = async ({
       countryName: "South Africa",
       type: "article",
       authors: [
-        "Crypto Unveil",
+        "De Cent",
         "Timo Klaasee",
         `https://www.linkedin.com/in/timoklaasee/`,
       ],
@@ -56,12 +56,12 @@ export const generateMetadata = async ({
         "crypto africa",
       ],
       title: data.title,
-      siteName: "Crypto Unveil",
+      siteName: "De Cent",
       url: `${process.env.WEBSITE_URL}${paths.blog.post(slug)}`,
       locale: "en_ZA",
     },
     robots: "index, follow",
-    applicationName: "Crypto Unveil",
+    applicationName: "De Cent",
   };
 };
 

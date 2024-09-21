@@ -11,7 +11,12 @@ export type TypographyVariant =
   | "muted";
 
 interface TypographyProps {
-  children: string | string[];
+  children:
+    | string
+    | string[]
+    | JSX.Element
+    | JSX.Element[]
+    | (string | JSX.Element)[];
   variant?: TypographyVariant;
   className?: string;
 }
@@ -36,7 +41,7 @@ export const Typography: FC<TypographyProps> = ({
       return (
         <h2
           className={
-            "font-bebas scroll-m-20 pb-2 text-5xl first:mt-0" + globalClasses
+            "font-bebas scroll-m-20 text-5xl first:mt-0" + globalClasses
           }
         >
           {children}
@@ -56,7 +61,7 @@ export const Typography: FC<TypographyProps> = ({
       return (
         <h4
           className={
-            "font-bebas scroll-m-20 text-2xl lg:text-2xl" + globalClasses
+            "font-bebas scroll-m-20 text-3xl lg:text-3xl" + globalClasses
           }
         >
           {children}

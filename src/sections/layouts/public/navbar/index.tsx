@@ -25,18 +25,18 @@ export const Navbar = () => {
           />
 
           <RouteItem
-            title={"Courses"}
-            href={paths.blog.index}
-          />
-
-          <RouteItem
-            title={"Our Mission"}
-            href={paths.mission}
+            title={"Portfolio"}
+            href={paths.portfolio}
           />
 
           <RouteItem
             title={"Contact"}
             href={paths.contact}
+          />
+
+          <RouteItem
+            title={"Blog"}
+            href={paths.blog.index}
           />
         </ul>
       </div>
